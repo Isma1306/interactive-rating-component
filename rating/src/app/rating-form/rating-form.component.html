@@ -10,21 +10,11 @@
   <!-- form start -->
   <form class="form" action="">
     <div class="rating">
-      <a class="num">
-        <p>1</p>
-      </a>
-      <a class="num">
-        <p>2</p>
-      </a>
-      <a class="num">
-        <p>3</p>
-      </a>
-      <a class="num">
-        <p>4</p>
-      </a>
-      <a class="num">
-        <p>5</p>
-      </a>
+      <ng-container *ngFor="let rating of ratingArray">
+        <a class="num" (click)="selectValue(rating)">
+          <p>{{rating}}</p>
+        </a>
+      </ng-container>
     </div>
     <button class="btn">
       <p>SUBMIT</p>
