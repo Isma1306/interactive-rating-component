@@ -3,6 +3,10 @@
   width: 15px;
 }
 
+.star {
+  background-color: hsl(216, 12%, 54%);
+}
+
 .form {
   display: flex;
   flex-direction: column;
