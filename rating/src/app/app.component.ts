@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Rating } from './rating';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'rating';
+
+  rating: Rating = { selectedRating: 0, values: [1, 2, 3, 4, 5] };
 }
