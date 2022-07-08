@@ -41,7 +41,7 @@
   background-color: white;
 }
 
-.num::selection {
+.selectedNum {
   color: white;
   background-color: hsl(217, 12%, 63%);
 }

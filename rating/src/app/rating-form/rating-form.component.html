@@ -11,7 +11,7 @@
   <form class="form" action="">
     <div class="rating">
       <ng-container *ngFor="let rating of ratingArray">
-        <a class="num" (click)="selectValue(rating)">
+        <a class="num" [ngClass]="{'selectedNum': rating === selectedValue}" (click)="selectValue(rating)">
           <p>{{rating}}</p>
         </a>
       </ng-container>

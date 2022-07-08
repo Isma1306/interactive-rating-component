@@ -14,7 +14,6 @@ export class RatingFormComponent implements OnInit {
   ngOnInit(): void {
   }
   selectValue(num: number) {
-    console.log('num :>> ', num);
     this.selectedValue = num;
   }
 }
