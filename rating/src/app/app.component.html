@@ -1,7 +1,8 @@
 <div class="container">
-  <app-rating-form [rating]="rating" (selected)="selectValue($event)">
+  <app-rating-form [rating]="rating" (selected)="selectValue($event)" (isSubmited)="isSubmited = $event"
+    *ngIf="!isSubmited">
   </app-rating-form>
-  <app-thanks></app-thanks>
+  <app-thanks *ngIf="isSubmited"></app-thanks>
 </div>
 <div class="attribution">
   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

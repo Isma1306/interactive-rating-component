@@ -8,7 +8,7 @@ import { Rating } from './rating';
 })
 export class AppComponent {
   title = 'rating';
-
+  public isSubmited: boolean = false;
   public rating: Rating = { selected: 0, values: [1, 2, 3, 4, 5] };
 
   selectValue(num: number) {

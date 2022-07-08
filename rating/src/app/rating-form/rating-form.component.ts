@@ -18,7 +18,7 @@ export class RatingFormComponent implements OnInit {
 
   submitHandler($event: any) {
     $event.preventDefault();
-    this.isSubmited.emit(true);
+    if (this.rating.selected != 0) this.isSubmited.emit(true);
   }
 
 }
