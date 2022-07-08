@@ -2,7 +2,7 @@
   <app-rating-form [rating]="rating" (selected)="selectValue($event)" (isSubmited)="isSubmited = $event"
     *ngIf="!isSubmited">
   </app-rating-form>
-  <app-thanks *ngIf="isSubmited"></app-thanks>
+  <app-thanks *ngIf="isSubmited" [value]="rating.selected"></app-thanks>
 </div>
 <div class="attribution">
   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

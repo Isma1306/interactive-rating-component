@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-thanks',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThanksComponent implements OnInit {
 
-  constructor() { }
+  @Input() value: Number = 0;
 
   ngOnInit(): void {
   }

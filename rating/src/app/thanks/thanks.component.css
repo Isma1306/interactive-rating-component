@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 5px;
 }
 
 .selected {
@@ -12,4 +13,13 @@
   border-radius: 30px;
   padding: 8px 20px 8px 20px;
   margin-top: 20px;
+}
+
+h1 {
+  margin-bottom: 7px;
+}
+
+p {
+  text-align: center;
+  margin-top: 0;
 }
