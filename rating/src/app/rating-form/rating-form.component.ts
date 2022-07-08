@@ -10,9 +10,15 @@ export class RatingFormComponent implements OnInit {
 
   @Input() rating: Rating = { selected: 0, values: [] };
   @Output() selected = new EventEmitter();
+  @Output() isSubmited = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  submitHandler($event: any) {
+    $event.preventDefault();
+    this.isSubmited.emit(true);
   }
 
 }

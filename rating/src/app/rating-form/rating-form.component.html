@@ -8,7 +8,7 @@
       to help us improve our offering!</p>
   </div>
   <!-- form start -->
-  <form class="form" action="">
+  <form class="form" (submit)="submitHandler($event)">
     <div class="rating">
       <ng-container *ngFor="let value of rating.values">
         <a class="num" [ngClass]="{'selectedNum': value === rating.selected}" (click)="selected.emit(value)">
