@@ -1,0 +1,15 @@
+.thanks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected {
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(25, 97%, 53%);
+  border-radius: 30px;
+  border-radius: 30px;
+  padding: 8px 20px 8px 20px;
+  margin-top: 20px;
+}

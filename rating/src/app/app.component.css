@@ -1,0 +1,21 @@
+.container {
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: radial-gradient(circle farthest-side at top, hsl(213, 19%, 18%), hsla(213, 19%, 18%, 20%));
+  padding: 30px;
+  max-width: 350px;
+  min-width: 300px;
+}
+
+/* attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
