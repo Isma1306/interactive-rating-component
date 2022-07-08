@@ -1,5 +1,5 @@
 export interface Rating {
-  selectedRating: Number,
+  selected: Number,
   values: Number[];
 
 }

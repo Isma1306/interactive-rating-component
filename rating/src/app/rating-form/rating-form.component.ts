@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Rating } from '../rating';
 
 @Component({
   selector: 'app-rating-form',
@@ -7,13 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RatingFormComponent implements OnInit {
 
-  public selectedValue: number = 0;
-  public ratingArray: number[] = [1, 2, 3, 4, 5];
+  @Input() rating: Rating = { selected: 0, values: [] };
+  @Output() selected = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
   }
-  selectValue(num: number) {
-    this.selectedValue = num;
-  }
+
 }

@@ -9,5 +9,9 @@ import { Rating } from './rating';
 export class AppComponent {
   title = 'rating';
 
-  rating: Rating = { selectedRating: 0, values: [1, 2, 3, 4, 5] };
+  public rating: Rating = { selected: 0, values: [1, 2, 3, 4, 5] };
+
+  selectValue(num: number) {
+    this.rating.selected = num;
+  }
 }

@@ -10,9 +10,9 @@
   <!-- form start -->
   <form class="form" action="">
     <div class="rating">
-      <ng-container *ngFor="let rating of ratingArray">
-        <a class="num" [ngClass]="{'selectedNum': rating === selectedValue}" (click)="selectValue(rating)">
-          <p>{{rating}}</p>
+      <ng-container *ngFor="let value of rating.values">
+        <a class="num" [ngClass]="{'selectedNum': value === rating.selected}" (click)="selected.emit(value)">
+          <p>{{value}}</p>
         </a>
       </ng-container>
     </div>

@@ -1,5 +1,6 @@
 <div class="container">
-  <app-rating-form></app-rating-form>
+  <app-rating-form [rating]="rating" (selected)="selectValue($event)">
+  </app-rating-form>
   <app-thanks></app-thanks>
 </div>
 <div class="attribution">
